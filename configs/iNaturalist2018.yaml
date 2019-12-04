@@ -1,0 +1,60 @@
+NAME: 'BBN.iNaturalist2018.res50.180epoch'
+OUTPUT_DIR: './output/iNat18'
+SHOW_STEP: 500
+SAVE_STEP: 5
+VALID_STEP: 1
+INPUT_SIZE: (224, 224)
+COLOR_SPACE: 'RGB'
+CPU_MODE: False
+
+DATASET:
+  DATASET: 'iNaturalist'
+  DATA_TYPE: 'jpg'
+  TRAIN_JSON: './jsons/iNat18_train_8142.json'
+  VALID_JSON: './jsons/iNat18_val_8142.json'
+
+BACKBONE:
+  TYPE: 'bbn_res50'
+
+MODULE:
+  TYPE: 'GAP'
+
+LOSS:
+  LOSS_TYPE: 'CrossEntropy'
+
+CLASSIFIER:
+  TYPE: 'FC'
+  BIAS: True
+
+TRAIN:
+  BATCH_SIZE: 128
+  MAX_EPOCH: 180
+  NUM_WORKERS: 16
+  COMBINER:
+    TYPE: 'bbn_mix'
+  TENSORBOARD:
+    ENABLE: False
+  SAMPLER:
+    TYPE: 'default'
+    DUAL_SAMPLER:
+      ENABLE: True
+      TYPE: 'reverse'
+  OPTIMIZER:
+    TYPE: 'SGD'
+    BASE_LR: 0.05
+    MOMENTUM: 0.9
+    WEIGHT_DECAY: 1e-4
+  LR_SCHEDULER:
+    TYPE: 'multistep'
+    LR_STEP: [120, 160]
+    LR_FACTOR: 0.1
+
+TRANSFORMS:
+  TRAIN_TRANSFORMS: ("random_resized_crop", "random_horizontal_flip")
+  TEST_TRANSFORMS: ("shorter_resize_for_crop", "center_crop")
+
+TEST:
+  BATCH_SIZE: 128
+  NUM_WORKERS: 16
+  MODEL_FILE: '/home/BBN/models/BBN.iNaturalist2018.res50.180epoch.best_model.pth'
+

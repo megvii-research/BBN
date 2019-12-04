@@ -1,0 +1,60 @@
+NAME: 'BBN.CIFAR10.res32.200epoch'
+OUTPUT_DIR: './output/cifar10'
+SHOW_STEP: 100
+SAVE_STEP: 5
+VALID_STEP: 1
+INPUT_SIZE: (32, 32)
+COLOR_SPACE: 'RGB'
+CPU_MODE: False
+
+DATASET:
+  DATASET: 'IMBALANCECIFAR10'
+  IMBALANCECIFAR:
+    RATIO: 0.02
+
+BACKBONE:
+  TYPE: 'bbn_res32_cifar'
+
+MODULE:
+  TYPE: 'GAP'
+
+CLASSIFIER:
+  TYPE: 'FC'
+  BIAS: True
+
+LOSS:
+  LOSS_TYPE: 'CrossEntropy'
+
+TRAIN:
+  BATCH_SIZE: 128
+  MAX_EPOCH: 200
+  NUM_WORKERS: 16
+  COMBINER:
+    TYPE: 'bbn_mix'
+  OPTIMIZER:
+    TYPE: 'SGD'
+    BASE_LR: 0.1
+    MOMENTUM: 0.9
+    WEIGHT_DECAY: 2e-4
+  LR_SCHEDULER:
+    TYPE: 'warmup'
+    LR_STEP: [120, 160]
+    LR_FACTOR: 0.01
+    WARM_EPOCH: 5
+  TENSORBOARD:
+    ENABLE: True
+  SAMPLER:
+    TYPE: 'default'
+    DUAL_SAMPLER:
+      ENABLE: True
+      TYPE: 'reverse'
+
+TRANSFORMS:
+  TRAIN_TRANSFORMS: ('random_crop', 'random_horizontal_flip')
+  TEST_TRANSFORMS: ()
+
+TEST:
+  BATCH_SIZE: 64
+  NUM_WORKERS: 8
+  MODEL_FILE: 'best_model.pth'
+

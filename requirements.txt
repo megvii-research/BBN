@@ -1,0 +1,8 @@
+torch>=1.0.1
+torchvision>=0.2.2.post3
+opencv-python
+PyYAML
+tensorboardX
+tqdm
+numpy
+click

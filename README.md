@@ -77,7 +77,7 @@ If you find this code useful in your research, please consider citing us:
 ## Contacts
 If you have any questions about our work, please do not hesitate to contact us by emails.
 
-Xiu-shen Wei: weixs.gm@gmail.com
+Xiu-Shen Wei: weixs.gm@gmail.com
 
 Boyan Zhou: zhouboyan94@gmail.com
 

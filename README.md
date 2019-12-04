@@ -27,7 +27,7 @@ python main/train.py  --cfg configs/cifar10.yaml
 python main/valid.py  --cfg configs/cifar10.yaml
 
 # To debug with CPU mode:
-python main/train.py  --cfg configs/cub200.yaml   CPU_MODE True
+python main/train.py  --cfg configs/cifar10.yaml   CPU_MODE True
 ```
 
 You can change the experimental setting by simply modifying the parameter in the yaml file.

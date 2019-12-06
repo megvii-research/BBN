@@ -54,7 +54,8 @@ Here is an example.
     'num_classes': 8142
 }
 ```
-You can use the following code to convert from the original format of iNaturalist.
+You can use the following code to convert from the original format of iNaturalist. 
+The images and annotations can be downloaded at [iNaturalist 2018](https://github.com/visipedia/inat_comp/blob/master/2018/README.md) and [iNaturalist 2017](https://github.com/visipedia/inat_comp/blob/master/2017/README.md)
 
 ```bash
 # Convert from the original format of iNaturalist

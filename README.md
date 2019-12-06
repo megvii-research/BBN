@@ -66,7 +66,7 @@ python tools/convert_from_iNat.py --file train2018.json --root /home/iNat18/imag
 If you find this code useful in your research, please consider citing us:
 ```
 @article{zhou2019BBN,
-	title={BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition},
+	title={{BBN}: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition},
 	author={Boyan Zhou and Quan Cui and Xiu-Shen Wei and Zhao-Min Chen},
 	journal={arXiv preprint arXiv:1912.02413},
 	pages={1--14},

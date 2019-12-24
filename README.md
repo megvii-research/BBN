@@ -14,9 +14,9 @@ This repository is the official PyTorch implementation of paper [BBN: Bilateral-
 
 We provide the BBN pretrain models of both 1x scheduler and 2x scheduler for iNaturalist 2018 and iNaturalist 2017.
 
-iNaturalist 2018: [Baidu Cloud](https://pan.baidu.com/s/1olDppTptZ5HYWsgQsMCPLQ)
+iNaturalist 2018: [Baidu Cloud](https://pan.baidu.com/s/1olDppTptZ5HYWsgQsMCPLQ), [Google Drive](https://drive.google.com/open?id=1B9ZEfMHqE-KQRKX6nQLQRm8ErFrnHaoE)
 
-iNaturalist 2017: [Baidu Cloud](https://pan.baidu.com/s/1soxsHKKblhapew_wuEdKPQ)
+iNaturalist 2017: [Baidu Cloud](https://pan.baidu.com/s/1soxsHKKblhapew_wuEdKPQ), [Google Drive](https://drive.google.com/open?id=1B9ZEfMHqE-KQRKX6nQLQRm8ErFrnHaoE)
 
 ## Usage
 ```bash

@@ -1,7 +1,7 @@
 ## BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition
 Boyan Zhou, Quan Cui, Xiu-Shen Wei*, Zhao-Min Chen
 
-This repository is the official PyTorch implementation of paper [BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](https://arxiv.org/abs/1912.02413).
+This repository is the official PyTorch implementation of paper [BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](https://arxiv.org/abs/1912.02413). (The work has been accepted by [CVPR2020](http://cvpr2020.thecvf.com/))
 
 ## Main requirements
 
@@ -69,9 +69,9 @@ If you find this code useful in your research, please consider citing us:
 @article{zhou2019BBN,
 	title={{BBN}: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition},
 	author={Boyan Zhou and Quan Cui and Xiu-Shen Wei and Zhao-Min Chen},
-	journal={arXiv preprint arXiv:1912.02413},
-	pages={1--14},
-	year={2019}
+	booktitle={CVPR},
+	pages={1--8},
+	year={2020}
 }
 ```
 

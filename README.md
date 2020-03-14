@@ -5,9 +5,9 @@ This repository is the official PyTorch implementation of paper [BBN: Bilateral-
 
 ## Main requirements
 
-  * **PyTorch ≥1.0**
-  * **torchvision ≥0.2.2_post3**
-  * **TensorboardX**
+  * **torch == 1.0.1**
+  * **torchvision == 0.2.2_post3**
+  * **tensorboardX == 1.8**
   * **Python 3**
 
 ## Pretrain models for iNaturalist

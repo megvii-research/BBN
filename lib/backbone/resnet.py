@@ -292,11 +292,3 @@ def bbn_res50(
         print("Choose to train from scratch")
     return resnet
 
-
-
-
-if __name__ == "__main__":
-    resnet = res50_cl_block()
-    state_dict = resnet.state_dict()
-    for k in state_dict:
-        print(k)

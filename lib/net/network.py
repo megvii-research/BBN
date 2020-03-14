@@ -63,7 +63,7 @@ class Network(nn.Module):
 
     def load_backbone_model(self, backbone_path=""):
         self.backbone.load_model(backbone_path)
-        print("Backbone model has been loaded...")
+        print("Backbone has been loaded...")
 
 
     def load_model(self, model_path):
@@ -81,7 +81,7 @@ class Network(nn.Module):
                 new_dict[k] = v
         model_dict.update(new_dict)
         self.load_state_dict(model_dict)
-        print("All model has been loaded...")
+        print("Model has been loaded...")
 
 
     def get_feature_length(self):

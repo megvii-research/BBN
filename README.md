@@ -10,6 +10,9 @@ This repository is the official PyTorch implementation of paper [BBN: Bilateral-
   * **tensorboardX == 1.8**
   * **Python 3**
 
+## Environmental settings
+This repository is developed using python **3.5.2** on Ubuntu **16.04.5 LTS**. The CUDA nad CUDNN version is **9.0** and **7.1.3** respectively. For Cifar experiments, we use **one NVIDIA 1080ti GPU card** for training and testing. (**four cards for iNaturalist ones**). Other platforms or GPU cards are not fully tested.
+
 ## Pretrain models for iNaturalist
 
 We provide the BBN pretrain models of both 1x scheduler and 2x scheduler for iNaturalist 2018 and iNaturalist 2017.
